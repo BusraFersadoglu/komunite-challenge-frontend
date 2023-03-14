@@ -1,17 +1,20 @@
 // Next
-import Head from 'next/head'
+import Head from "next/head";
+
+//Tailwind CSS
+import "tailwindcss/tailwind.css";
 
 // Components
-import HomeTemplate from "@/components/templates/home"
+import HomeTemplate from "@/components/templates/HomeTemplate";
 
 // Types
-import type { NextPage } from 'next'
+import type { NextPage } from "next";
 
-type Props = {}
+type Props = {};
 
-const Home: NextPage = ({}:Props) => {
+const Home: NextPage = ({}: Props) => {
   return (
-    <>
+    <div className="flex items-center justify-center h-screen">
       <Head>
         <title>Komünite Challange Front-End</title>
         <meta name="description" content="" />
@@ -19,8 +22,8 @@ const Home: NextPage = ({}:Props) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <HomeTemplate />
-    </>
-  )
-}
+    </div>
+  );
+};
 
-export default Home
+export default Home;
